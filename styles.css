@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("assets/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("assets/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --primary-bg: #fafafa;
     --secondary-bg: #ffffff;
@@ -8,7 +23,8 @@
     --hover-bg: #f5f5f5;
     
     --font-display:"Italianno", serif;
-    --font-body: "Arial", sans-serif;
+    --font-body: "PP Neue Montreal", sans-serif;
+
     --page-max-width: 1100px; 
     --page-padding: 2rem; 
     
@@ -66,19 +82,21 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    color: var(--text-primary);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-weight: 400;
-    letter-spacing: -0.02em;
+}
+
+.logo-img {
+    height: 34px;   
+    width: auto;
+    display: block;
     transition: opacity var(--transition-fast);
 }
 
 .logo:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .nav-links {
@@ -167,6 +185,7 @@ body {
 }
 
 .intro-text {
+    font-family: "PP Neue Montreal", sans-serif;
     animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s backwards;
 }
 
@@ -209,6 +228,7 @@ body {
 /*About Section*/
 .about-section {
     background-color: var(--secondary-bg);
+    font-weight: 700;
 }
 
 .section-header {
